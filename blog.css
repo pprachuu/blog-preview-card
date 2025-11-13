@@ -1,85 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body{
-    min-height: 700px;
+    min-height: 100vh;
+    width: 100%;
     font-family: "figtree";
     background-color:  hsl(47, 88%, 63%);
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .container{
-    position: absolute;
-    height: 435px;
-    width: 295px;
     background-color: white;
     border: 1px solid black;
+    padding: 1.5rem;
+    max-width: 384px;
     border-radius: 20px;
+    box-shadow: 8px 8px 0 black;
+}
+
+.image {
+    height: 12.5rem;
+    overflow: hidden;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    box-shadow: 8px 8px black;
 }
-img{
-    margin-left: 4px;
-    height: 150px;
-    border-radius: 10px;
+
+.elements{
+    padding: 1.5rem 0;
 }
-.standatease{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    position: relative;
-    left: 2px;
-    margin-top: 6px;  
-    margin-bottom: 10px;   
-}
+
 .boxtext{
-    background-color:  hsl(47, 88%, 63%);
-    width: 23%;
-    height: 38%;
-    padding: 7px;
-    margin-top: 10px; 
-    margin-bottom: 10px;
-    border-radius: 3px;
-    font-weight: 700;
-    font-size: 14px;
-}
-.smalltext{
-    margin-top: 5px; 
-    margin-bottom: 10px;
-    text-align: left;
-    font-size: 11px;
-    font-weight: 600;
-}
-.heading{
-    margin-top: 5px; 
-    margin-bottom: 10px;
+    background-color:hsl(47, 88%, 63%);
+    border-radius: 4px;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 0.875rem;
+    padding: 5px 10px;
+    line-height: 150%;
+    width:fit-content;
 }
+
+.details {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin: 0.75rem 0;
+    line-height: 150%;
+
+}
+
+.heading{
+    line-height: 150%;
+    font-weight: 800;
+    font-size: 1.625rem;
+    margin: 0.75rem 0;
+    width: fit-content;
+}
+
 .heading:hover{
-    color: hsl(47, 88%, 63%); ;
+    color: hsl(47, 88%, 63%);
+    transition: color 0.2s ease;
 }
-.maintext{
+
+.maintext {
     color:  hsl(0, 0%, 42%);
-      margin-top: 5px; 
-  margin-bottom: 10px;
-    text-align: left;
-    margin-right: 10px;
-    font-size: 13px;
+    line-height: 150%;
+    font-weight: 500;
+    font-size: 1rem;    
 }
-.grey{
+
+.grey h2{
     display: flex;
     align-items: center;
-    font-size: 13px;
-    font-weight: 700;
 }
-.greyimg{
-    margin-right: 10px;
+
+.grey img{
     height: 30px;
 }
-.attribution{
-    position: absolute;
-    bottom: 12%;
+.grey h2{
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 150%;
+    text-indent: 0.75rem;
+}
+
+.attribution { 
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 1.5rem;
+    margin-left: 0.25rem;
+}
+
+.attribution a { 
+    color: hsl(0, 0%, 0%); 
+}
+
+@media (min-width:27.25rem){
+
+    body{
+   
+    }
 }
